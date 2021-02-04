@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-express-mysql",
+  "version": "1.0.0",
+  "description": "Node.js CRUD with Node.js, Express and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
+  "author": "Michael Dörflinger",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.3",
+    "dateformat": "^3.0.3",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-csp-header": "^4.0.0",
+    "express-flash": "0.0.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.22.2",
+    "mysql": "^2.18.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4",
+    "var_dump": "^1.0.5"
+  }
+}

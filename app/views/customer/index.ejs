@@ -1,0 +1,38 @@
+<%- include ../layouts/header.ejs %>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><%= title %><a href="/customer/create" class= "pull-right"><i class="fa fa-plus fa-fw"></i>Add New Customer</a></div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>E-Mail</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (customers) { %>
+                        <% customers.forEach(function(customer){ %>
+                        <tr>
+                            <td>
+                                <%= customer.email %>
+                            </td>
+                            <td>
+                                <%= customer.name %>
+                            </td>
+                            <td>
+                                <a href="/customer/edit/<%= customer.id %>"><i class="fa fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <% }) %>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../layouts/footer.ejs %>
